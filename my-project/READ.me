@@ -1,0 +1,90 @@
+#Bank Transactions React App
+Overview
+This project is a React application designed to manage and display a list of recent bank transactions. The application features functionality for viewing, adding, filtering, sorting, and deleting transactions. It also includes integration with a local JSON server for fetching initial transaction data.
+
+Table of Contents
+Features
+Project Setup
+Usage
+Technologies
+Contributing
+License
+Features
+Core Deliverables
+View Transactions: Display a table of all transactions.
+Add Transaction: Fill out and submit a form to add a new transaction. (Note: This new transaction will only be added to the table and is not persisted to the backend.)
+Filter Transactions: Search and filter transactions by description through a search bar.
+Bonus Deliverables
+Sort Transactions: Sort transactions alphabetically by category or description.
+Delete Transactions: Remove a transaction from the table.
+Project Setup
+Clone the Repository
+
+sh
+Copy code
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
+Install Dependencies
+
+Ensure you have Node.js installed. Then, run:
+
+sh
+Copy code
+npm install
+Set Up the Local Server
+
+In your project directory, create a file named db.json and add the required transaction data using the provided data links.
+
+Start the JSON server with:
+
+sh
+Copy code
+json-server --watch db.json
+Test your server by visiting http://localhost:8001/transactions.
+
+Run the Application
+
+Start the React application with:
+
+sh
+Copy code
+npm start
+The app should be running at http://localhost:3000.
+
+Usage
+Viewing Transactions
+
+Upon loading, the application displays a table of all transactions fetched from the JSON server.
+
+Adding Transactions
+
+Use the form provided to enter details of a new transaction and submit it. The transaction will appear in the table but will not be saved to the server.
+
+Filtering Transactions
+
+Type into the search bar to filter transactions by description. Only matching transactions will be displayed.
+
+Sorting Transactions (Bonus)
+
+Use the sorting options to arrange transactions alphabetically by category or description.
+
+Deleting Transactions (Bonus)
+
+Click the delete button associated with a transaction to remove it from the table.
+
+Technologies
+React: For building the user interface.
+json-server: To simulate a backend server with a local JSON file.
+npm: For package management.
+Contributing
+To contribute to this project:
+
+Fork the repository
+Create a new branch for your changes
+Commit your changes
+Push to your forked repository
+Create a Pull Request
+Please ensure your code adheres to the project's coding standards and includes appropriate documentation.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
